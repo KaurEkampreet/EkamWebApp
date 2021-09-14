@@ -1,0 +1,497 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+    font-size: 1.02vw;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 1.16vw;
+    }
+}
+
+
+
+.border-top {
+    border-top: 0.073vw solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 0.073vw solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 4.38vw;
+}
+
+.container, body {
+    z-index: 0;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    /* Set the fixed height of the footer here */
+    height: 4.38vw;
+    line-height: 4.38vw;
+    /* Vertically center the text there */
+    background-color: white;
+}
+
+/* .container {
+  background-color: lavenderblush;
+} */
+
+
+
+body {
+    
+    /*background-image: url(../img/EnchantedEdit1.jpg); */
+    background-color: lightgray;
+}
+
+.mainContent {
+    margin-top: 3.65vw;
+    background-color: white;
+    height: 14.65vw;
+    width: 36.5vw;
+}
+
+a:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 0.219vw rgb(231, 185, 200);
+    padding: 0.438vw;
+}
+
+.headerHome {
+    /* background-color: whitesmoke; */
+    text-align: center;
+    margin-bottom: 3vw;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    -webkit-text-stroke: 0.073vw #6a6d71;
+    color: white;
+    text-shadow: .219vw .219vw 0 #6a6d71, -0.073vw -0.073vw 0 #6a6d71, 0.073vw -0.073vw 0 #6a6d71, -0.073vw 0.073vw 0 #6a6d71, 0.073vw 0.073vw 0 #6a6d71;
+}
+
+.headerSkills {
+    margin-bottom: 1.462vw;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    -webkit-text-stroke: 0.073vw #6a6d71;
+    color: white;
+    text-shadow: .219vw .219vw 0 #6a6d71, -0.073vw -0.073vw 0 #6a6d71, 0.073vw -0.073vw 0 #6a6d71, -0.073vw 0.073vw 0 #6a6d71, 0.073vw 0.073vw 0 #6a6d71;
+}
+
+.skills {
+    top: 20%;
+    position: fixed;
+    height: 50%;
+    width: 50%;
+}
+
+.leftSkills {
+    left: 0;
+}
+
+header, nav {
+    z-index: 1;
+}
+
+.rightSkills {
+    right: 0;
+    display: inline-block;
+}
+
+.fa-linkedin-square, i.fa.fa-linkedin-square {
+    content: "\f08c";
+    left: 35%;
+    position: relative;
+}
+
+
+.fa-github, i.fa.fa-github.bounce {
+    content: "\f09b";
+    left: 15%;
+    position: relative;
+}
+
+
+.fa-envelope-o, i.fa.fa-envelope-o {
+    content: "\f003";
+    left: 57%;
+    position: relative;
+}
+
+.socialLinks {
+    margin-top: 3.847vw;
+    outline: 0.365vw solid white;
+    margin-left: 1.096vw;
+    background: linear-gradient(to left, rgba(0,0,0,0.0) 50%, rgb(233, 228, 245) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+    .socialLinks:hover {
+        background-position: left bottom;
+    }
+
+
+.colorfulBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 1.462vw auto;
+    width: 73.099vw;
+    height: 33.675vw;
+    background: white;
+    border-radius: 5.482vw;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.777vw;
+    font-weight: lighter;
+    letter-spacing: 0.146vw;
+    transition: 1s box-shadow;
+    text-align: center;
+    padding: 3.70vw;
+}
+
+.homeBody:hover .colorfulBox {
+    box-shadow: 0 0.365vw 2.558vw 0vw rgba(0, 0, 0, .5);
+}
+
+    .homeBody:hover .colorfulBox:before, .homeBody:hover .colorfulBox:after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 62.111vw;
+        height: 33.589vw;
+        background: #f7bebe;
+        border-radius: 5.282vw;
+        z-index: -1;
+        animation: 1s clockwise infinite;
+    }
+
+    .homeBody:hover .colorfulBox:after {
+        /* background: #e0cee8; */
+        background: #9bb8ff;
+        z-index: -1;
+        animation: 2s counterclockwise infinite;
+    }
+
+@keyframes clockwise {
+    0% {
+        top: -0.365vw;
+        left: 0;
+    }
+
+    12% {
+        top: -0.146vw;
+        left: 0.146vw;
+    }
+
+    25% {
+        top: 0;
+        left: 0.365vw;
+    }
+
+    37% {
+        top: 0.146vw;
+        left: 0.146vw;
+    }
+
+    50% {
+        top: 0.365vw;
+        left: 0;
+    }
+
+    62% {
+        top: 0.146vw;
+        left: -0.146vw;
+    }
+
+    75% {
+        top: 0;
+        left: -0.365vw;
+    }
+
+    87% {
+        top: -0.146vw;
+        left: -0.146vw;
+    }
+
+    100% {
+        top: -0.365vw;
+        left: 0;
+    }
+}
+
+@keyframes counterclockwise {
+    0% {
+        top: -0.365vw;
+        right: 0;
+    }
+
+    12% {
+        top: -0.146vw;
+        right: 0.146vw;
+    }
+
+    25% {
+        top: 0;
+        right: 0.365vw;
+    }
+
+    37% {
+        top: 0.146vw;
+        right: 0.146vw;
+    }
+
+    50% {
+        top: 0.365vw;
+        right: 0;
+    }
+
+    62% {
+        top: 0.146vw;
+        right: -0.146vw;
+    }
+
+    75% {
+        top: 0;
+        right: -0.365vw;
+    }
+
+    87% {
+        top: -0.146vw;
+        right: -0.146vw;
+    }
+
+    100% {
+        top: -0.365vw;
+        right: 0;
+    }
+}
+
+.bounce:before {
+    -webkit-text-stroke: 0.073vw #6a6d71;
+    color: white;
+    text-shadow: 0.219vw 0.219vw 0 #6a6d71, -0.073vw -0.073vw 0 #6a6d71, 0.073vw -0.073vw 0 #6a6d71, -0.073vw 0.073vw 0 #6a6d71, 0.073vw 0.073vw 0 #6a6d71;
+}
+
+.bounce:hover {
+    display: inline-block;
+    position: relative;
+    -moz-animation: bounce 0.5s infinite linear;
+    -o-animation: bounce 0.5s infinite linear;
+    -webkit-animation: bounce 0.5s infinite linear;
+    animation: bounce 0.5s infinite linear;
+    color: #636FA4;
+    /* fallback for old browsers */
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -0.2em;
+    }
+
+    70% {
+        top: -0.3em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@-moz-keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -0.2em;
+    }
+
+    70% {
+        top: -0.3em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@-o-keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -0.2em;
+    }
+
+    70% {
+        top: -0.3em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@-ms-keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -0.2em;
+    }
+
+    70% {
+        top: -0.3em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -0.2em;
+    }
+
+    70% {
+        top: -0.3em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+
+.tableImg {
+    height: 3.65vw;
+    width: 3.65vw;
+}
+
+th {
+    color: white;
+    background-color: rgb(233, 228, 245);
+}
+
+table {
+    background-color: rgb(233, 228, 245);
+    border: 0.219vw solid white;
+}
+
+.myPic {
+    height: 21.92vw;
+    width: auto;
+    outline: 0.51vw solid white;
+    margin-bottom: 1.096vw;
+}
+
+form {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 0.877vw 1.461vw;
+    margin: 0.585vw 0;
+    display: inline-block;
+    border: 0.073vw solid #ccc;
+    border-radius: 0.585vw;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(212, 196, 252);
+    color: white;
+    padding: 1.02vw 1.462vw;
+    margin: 0.585vw 0;
+    border: none;
+    border-radius: 0.292vw;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        background-color: rgb(186, 161, 248);
+    }
+
+.aboutText {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.754vw;
+}
+
+.projectImgs {
+    height: 23.757vw;
+    width: auto;
+}
+
+.projectTable {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #6a6d70;
+}
+
+.footer li {
+    display: inline;
+    margin-right: 3.655vw;
+}
+
+    .footer li a:hover {
+        text-decoration: underline;
+    }
+
+    .footer li a {
+        color: black;
+        text-decoration: none;
+    }
